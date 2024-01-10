@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus Page</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/Aboutus.css' %}">
+</head>
+<body> 
+    <H1> HEALTHCARE APPOINTMENT SYSTEM</H1>
+    <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                </ul>
+            </nav>
+    </div>
+    <H3>ABOUT US </H3>
+
+    <div class="details1">
+
+        <div class="detailsimg1">
+
+        </div>
+
+    </div>
+
+    <div class="About1">
+        <h2>Our Mission</h2>  
+    <p>Doctor Appointment Application, our mission is to revolutionize healthcare accessibility by providing a seamless and efficient platform for scheduling doctor appointments. We believe that everyone deserves easy access to quality healthcare, and our app is designed to bridge the gap between patients and healthcare providers.
+    </div>
+    </p>
+
+       <div class="About2">
+        <h2>Privacy and Security</h2>
+       <p> We prioritize the security and privacy of your health information. Our platform adheres to the highest standards to ensure your data is safe and confidential. <br><br>
+        <b>Accessibility: </b> <br> Doctor Appointment Application is committed to making healthcare accessible to everyone. Whether you're in a bustling city or a remote area, our platform connects you with healthcare providers effortlessly.
+       </p>
+    </div>
+
+    <div class="team"> <H1>OUR TEAM </H1></div>
+    
+    <div class="Outercontact">
+
+        <div class="Aboutus1">
+           <div class="innerabout1"><h1> Manikanta </h1>  </div> 
+           <div class="innerabout2"><p>manikanta@gmail.com</p></div> 
+            <div class="innerabout3"><p>7995231198 </p></div> 
+        </div>
+
+        <div class="Aboutus1">
+            <h1> Dinesh</h1>
+            <p> Dinesh@gmail.com </p>
+            <p> 6302918823</p>
+        </div>
+            
+        <div class="Aboutus1">
+            <h1> Siva</h1>
+            <p> siva@gmail.com </p>
+            <p> 7995563695</p>
+        </div>
+
+        <div class="Aboutus1">
+            <h1> Saketh</h1>
+            <p> Saketh@gmail.com </p>
+            <p> 9515438498</p>
+        </div>
+
+        <div class="Aboutus1">
+            <h1> Ashok</h1>
+            <p> Ashok@gmail.com </p>
+            <p> 6305478910</p>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer">
+            <H6>Copyright © 2023 | HEALTHCARE APPOINTMENT SYSTEM | All rights reserved. </H6> 
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- create_profile.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Profile</title>
+</head>
+<body>
+    <h1>Create Your Profile</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="username"> <i class='fas fa-user-alt' style='font-size:20px'></i> &nbsp; Username:
+            <input type="text" id="username" name="username" required placeholder="Firstname">
+    </label>
+        <label for="email"> <i class="fa fa-envelope" style="font-size:20px"></i> &nbsp; Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email" required placeholder="Email" >
+    </label>
+    <label for="number"><i class='fas fa-phone-square-alt' style='font-size:20px'></i> &nbsp; &nbsp;Number: &nbsp;&nbsp; 
+        <input type="text" id="Number" name="number" required placeholder="Number">
+    </label>
+    <label for="password"><i class='fas fa-lock' style='font-size:20px'></i> &nbsp; Password:&nbsp;
+        <input type="password" id="password" name="password" required placeholder="Password">
+    </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

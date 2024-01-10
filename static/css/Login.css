@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url(Login.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    background-color: #004763;
+    color: white;
+}
+body h2{
+    text-decoration: underline;
+}
+.container {
+    margin-top: 100px;
+    margin-left: 490px;
+    background-color: #ffffff7c;
+    border: 4px;
+    border-color: black;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20.1);
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    margin-top: 130PX;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.innerdiv1 button {
+    align-self: center;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 30px;
+    width: 250px;
+    background-color: #3498db;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.innerdiv1 button:hover{
+    background-color:  #0080ff;
+    color: white;
+}
+
+.a1{
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

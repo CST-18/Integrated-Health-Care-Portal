@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/appointment1.css' %}">
+</head>
+<body>
+    <H1> HEALTHCARE APPOINTMENT SYSTEM</H1>
+    <h2>Appointment Details</h2>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name='name' required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name='age' required><br>
+
+        <label for="phoneNo">Phone Number:</label>
+        <input type="tel" id="phoneNo" name='phoneNo'  maxlength="10" required><br>
+
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="" id="appointmentDate" placeholder="YYYY-MM-DD"  name='appointment' required><br>
+
+        <label for="symptoms">Symptoms:</label>
+        <textarea id="symptoms" rows="4" name='symptoms' required></textarea><br>
+
+        <button type="submit">Submit Appointment</button>
+    </form>
+
+    <footer>
+        <H6>Copyright © 2023 | HealthCare Appointment System | All rights reserved. </H6> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Page</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/Doctor.css' %}">
+</head>
+<body>
+    <H1> DOCTOR APPOINTMENT APPLICATION </H1>
+    <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                </ul>
+            </nav>
+    </div>
+
+    <div class="container">
+        <H1>List of Doctor's  </H1>
+
+        <table border="" align="content">
+            <thead>
+                <tr>
+                    <th>DOCTER ID</th>
+                    <th>NAME</th>
+                    <th>SPECIALITY</th>
+                    <th>CONTACT</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <TR>
+                    <td>D001</td>
+                    <td>Dr.AGARWAL</td>
+                    <td>Eye</td>
+                    <td>9999966666</td>
+
+                </TR>
+                <TR>
+                    <td>D002</td>
+                    <td>Dr.DINESH</td>
+                    <td>Heart</td>
+                    <td>9996666699</td>
+
+                </TR>
+                <TR>
+                    <td>D003</td>
+                    <td>Dr.KARTIK</td>
+                    <td>Brain</td>
+                    <td>9966666999</td>
+
+                </TR>
+                <TR>
+                    <td>D004</td>
+                    <td>Dr.VIRAT</td>
+                    <td>Child</td>
+                    <td>9666669999</td>
+
+                </TR>
+                <TR>
+                    <td>D005</td>
+                    <td>Dr.ROHIT</td>
+                    <td>Bones</td>
+                    <td>9966666999</td>
+
+                </TR>
+                <TR>
+                    <td>D006</td>
+                    <td>Dr.JADEJA</td>
+                    <td>Skin</td>
+                    <td>9999966666</td>
+
+                </TR>
+                <TR>
+                    <td>D007</td>
+                    <td>Dr.DHONI</td>
+                    <td>Brain</td>
+                    <td>9666669999</td>
+
+                </TR>
+                <TR>
+                    <td>D008</td>
+                    <td>Dr.MAXWELL</td>
+                    <td>Child</td>
+                    <td>6666699999</td>
+
+                </TR>
+                <TR>
+                    <td>D009</td>
+                    <td>Dr.RAHUL</td>
+                    <td>Bones</td>
+                    <td>9999966666</td>
+
+                </TR>
+                <TR>
+                    <td>D010</td>
+                    <td>Dr.SHAMI</td>
+                    <td>Heart</td>
+                    <td>6666699999</td>
+
+                </TR>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

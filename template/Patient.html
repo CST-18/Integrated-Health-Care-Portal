@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Patient.css' %}">
+</head>
+<body>
+   <body>
+      <H1> HEALTHCARE APPOINTMENT SYSTEM </H1>
+
+      <div class="header">
+              <nav>
+                  <ul>
+                     <li><a href="{% url 'homepage' %}">Home</a></li>
+                     <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                     <li><a href="{% url 'services' %}">Services</a> </li>
+                     <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                  </ul>
+              </nav>
+      </div>
+      <!-- <H2> PATIENT INFORMATION FORM </H2> -->
+       <h4 class="note">Note: "Caution: Accuracy is crucial. Please fill out the form with precision to avoid delays and ensure proper handling of your information."</h4>
+
+   <div class="wrapper">
+    <div class="title">
+      PATIENT INFORMATION
+      <!-- <h6> Please fill all the information as accurately as possible.
+          The information you provide will assist in formulating a complete health profile.
+          All Answers are confidential.</h6> -->
+    </div>
+    <form action="" method="POST">
+      {% csrf_token %}
+    <div class="form">
+       <div class="inputfield" >
+          <label>First Name</label>
+          <input type="text" name="fname" class="input" required>
+       </div>
+        <div class="inputfield" >
+          <label>Last Name</label>
+          <input type="text" name="lname" class="input">
+       </div>
+       <div class="inputfield" >
+         <label>Gender</label>
+          <input type="text" name="gender" class="input" required>      
+       </div>
+       <div class="inputfield" name="date_of_birth">
+         <label>Date Of Birth</label>
+         <input type="" name="date_of_birth" class="input"  placeholder="YYYY-MM-DD" required>
+      </div>
+      <div class="inputfield" >
+         <label>Aadhar Number</label>
+         <input type="text" name="aadharnumber" class="input" maxlength="12" required>
+      </div>
+      <div class="inputfield" >
+         <label>Email Address</label>
+         <input type="text" name="email" class="input">
+      </div>
+      <div class="inputfield" >
+         <label>Phone Number</label>
+         <input type="text" name="phonenumber" class="input" maxlength="10" required>
+      </div>
+
+      <div class="inputfield" >
+          <label>BLOOD Group</label>
+          <input type="text" name="bloodgroup" class="input">
+      </div>
+
+       <div class="inputfield" >
+         <label>Select Doctor</label>
+          <!-- <input type="text" name="gender" class="input" required> -->
+          <select class="doctordet" name="doctordet" id="gender">
+            <option value="">-Select Doctor-</option>
+            <option value="1">Doctor1</option>
+            <option value="2">Doctor2</option>
+            <option value="3">Doctor3</option>
+        </select>
+       </div>
+      <div class="inputfield">
+         <label>Address</label>
+         <textarea name="address" class="textarea" required></textarea>
+      </div>
+      <div class="inputfield">
+         <label>Health Concerns / Symptoms: <br>
+            <!-- (Describe your main Concerns Symptoms Diagnosis Duration etc.)  -->
+         </label>
+         <textarea name="symptoms" class="textarea" required placeholder="Describe your main Health Concerns and Symptoms..."></textarea>
+      </div>
+       <div class="title">
+         EMERGENCY CONTACT
+       </div>
+       <div class="inputfield" >
+         <label>Name</label>
+         <input type="text" name="ename" class="input" required>
+      </div>
+      <div class="inputfield" >
+         <label>RelationShip</label>
+         <input type="text" name="relation" class="input" required>
+      </div>
+        <div class="inputfield">
+          <label> Contact No.</label>
+          <input type="text" name="emergencynumber" maxlength="10" class="input" required>
+       </div>
+      <div class="inputfield">
+        <button class="btn">Submit</button>
+      </div>
+
+      
+    </div>
+  </form>
+</div>
+
+<footer>
+   <H6>Copyright © 2023 | HealthCare Appointment System  | All rights reserved. </H6> 
+</footer>
+   
+</body>
+</html>

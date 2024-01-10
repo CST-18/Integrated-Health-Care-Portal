@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <title>HOSPITAL APPOINTMENT SYSTEM / HOME</title>
+</head>
+<body>
+    <H1> HEALTHCARE APPOINTMENT SYSTEM</H1>
+    <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+                    <!-- <li><a href="{% url 'appointment_list' %}">Prescription</a></li> -->
+                    <li><a href="{% url 'logout' %}">Logout</a> </li>
+                    <!-- <h1>Hello, {{ user_profile.user.username }}!</h1> -->
+                </ul>
+            </nav>
+    </div>
+
+    <div class="outercontent">
+
+        <div class="details">
+                <h2>EFFICIENT, STRESS-FREE</h2>   
+                <h2>WELLNESS ON DEMAND. </h2>
+                <h2>Expert Physicians. Therapists. Immediate  superior.</h2>
+                <h3>Patients can access healthcare professionals without the need for in-person visits reducing wait times and making the overall process more convenient. 
+                    This approach is especially beneficial for minor illnesses, routine check-ups, and mental health support allowing individuals to receive care from the comfort of their homes.</h3>
+                    
+                    <div class="contents">
+                        <div class="innercontents">
+                                <div class="containers">
+                                    <div class="innercontainers1">
+                                    <h2>Book Appointment</h2>
+                                </div>
+                                <div class="innercontainers2">
+                                    <a href="{% url 'patient' %}">Click Here</a>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+   
+    <div class="details1">
+        <h2>See if your symptoms feel more like a cold, fever, or COVID-19 <h2>
+        <h2>Get prompt care in minutes for quicker relief—your health, our priority.</h2>
+
+    </div>
+
+    <div class="details2">
+        <h1>Using Appointment System is as easy as one, two, three. </h1>
+        <h2>Your Wellness Scheduler is committed to aiding your recovery and maintaining good health. <br> Transparent pricing, zero surprises.  Streamlined, stress-free—your well-being matters.</h2>
+        
+        <div class="detailsimg2">
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="innercontent">
+                <div class="container">
+                    <div class="innercontainer1">
+                        <h2>Doctor Details</h2>
+                    </div>
+                    <div class="innercontainer2">
+                        <a href="{% url 'doctor_information' %}">Click Here</a>
+                    </div>
+                </div>
+    
+                <div class="container">
+                <div class="innercontainer1">
+                    <h2>Patient Details</h2>
+                </div>
+                <div class="innercontainer2">
+                    <a href="{% url 'patient' %}">Click Here</a>
+                </div>
+                </div>
+
+                <div class="container">
+                <div class="innercontainer1">
+                    <h2>Schedule Appointment </h2>
+                </div>
+                <div class="innercontainer2">
+                    <a href="{% url 'appointment1' %}">Click Here</a>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="details3">
+
+        <div class="detailsimg3">
+
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="innercontent">
+            <div class="container">
+                <div class="innercontainer1">
+                    <h2>Priscription Details </h2>
+                </div>
+                <div class="innercontainer2">
+                    <a href="{% url 'appointment_list' %}">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="details4">
+
+        <div class="detailsimg4">
+
+
+        </div>
+
+    </div>
+
+
+    <div class="content1">
+        <div class="c">
+            <h2>Efficient Healthcare</h2> <br>   
+            <h2 id="next"> Appointment System </h2>
+        </div>
+        <h3>This comprehensive Healthcare Appointment System facilitates real-time availability updates, allowing patients to choose convenient time slots. It incorporates features like virtual consultations and online prescription requests, expanding healthcare accessibility. The system enhances communication between healthcare providers and patients, reducing wait times and enhancing the overall patient journey. With secure data management, it ensures compliance with privacy regulations and fosters a more patient-centric approach to healthcare delivery. Continuous feedback mechanisms also contribute to ongoing system improvement and increased patient satisfaction.</h3>
+
+    </div>
+
+    <div class="content2">
+        <div class="c">
+            <h2>Safe Appointment </h2> <br>   
+            <h2 id="next"> Scheduling ensures</h2>
+        </div>
+        <h3> Safe Appointment Scheduling Details: Our healthcare appointment system ensures a secure and user-friendly experience. Through encrypted connections, patient data remains confidential. Authentication adds an extra layer of protection. Virtual consultations platform. <br>
+             Additionally, robust data backup and recovery measures safeguard against potential disruptions, ensuring a safe and reliable scheduling process for both patients and healthcare providers.
+            
+            Our Safe Appointment Scheduling ensures secure data handling with encryption and consultations, prioritizing patient privacy and safety throughout the process.
+        </h3>
+
+    </div>
+
+
+
+<footer>
+    <H6>Copyright © 2023 | HealthCare Appointment System | All rights reserved. </H6> 
+</footer>
+
+</body>
+</html>

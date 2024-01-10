@@ -1,0 +1,48 @@
+<!-- appointment_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Appointments</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Priscription.css' %}">
+</head>
+<body>
+    <div class="heading">
+        <H1> HEALTHCARE APPOINTMENT SYSTEM</H1>
+    </div>
+    <div class="container">
+        <h1>PRESCRIPTION DETAILS</h1>
+        <div class="details">
+    {% if approved_appointments %}
+        <ul>
+    {% for app in approved_appointments %}
+        <p>Name : {{ app.name }} </p>
+        <p>Appointment Date : {{ app.appointment }}</p>
+        <p>Age : {{ app.age }}</p>
+        <p>Symptoms: {{ app.symptoms }}</p>
+    {% endfor %}
+        </ul>
+        <p>By going through your symptoms, we recommend the following tablets:</p>
+        <!-- <p>Tablets :</p> -->
+        <ol>
+        <li>Aspirin - 10</li>
+        <li>Tylenol  - 10</li>
+        <li>Dihydroergotamine - 10</li>
+        <li>Cetirizine - 10</li>
+        <li>Paracetamol  - 10</li>
+        </ol>
+        </div>
+        <div class="greet">
+        <h1>Thank You!</h1>
+        <p>Your prescription has been submitted successfully. We appreciate your trust.</p>
+        <p>Take care and get well soon!</p>
+        </div>
+    {% else %}
+        <p>No approved appointments available.</p>
+    {% endif %}
+</div>
+</body>
+</html>

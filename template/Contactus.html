@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/Contactus.css' %}">
+</head>
+<body>
+    <div class="header">
+
+        <H1> HEALTHCARE APPOINTMENT SYSTEM</H1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'homepage' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">Aboutus</a></li>
+                <li><a href="{% url 'services' %}">Services</a> </li>
+                <li><a href="{% url 'contactus' %}">Contactus</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact">
+        <H3>CONTACT US </H3>
+    </div>
+
+    <div class="details1">
+
+        <div class="detailsimg1">
+
+            <div class="det">
+                <h1>contact us.</h1>
+                <p> we're here to help </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="Content"> 
+        <p>Welcome to our Doctor Appointment Application! We're here to help and assist you.
+            <br>  If you have any questions, concerns, or feedback, please don't hesitate to get in touch with us.</p>
+
+        <h2>  Customer Support / Technical  Support: </h2>
+        <h3></h3>
+        <p> For assistance with using our application or any general inquiries, please contact our customer support team.
+            <!-- <br> -->
+            If you're facing technical issues or have specific technical questions, our technical support team is here to help. 
+            <BR> 
+            Email: support@doctorappointment@gmail.com <br>
+            Phone: 9999999999
+        </p>
+
+        <div class="feedback">
+            <form action="" method="POST">
+                {% csrf_token %}
+                
+            <h3> Enter Your Feedback</h3>
+                <label for="name">  Name: &nbsp; &nbsp;
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                    </label> 
+                <label for="Email"> Email: &nbsp; &nbsp;
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </label> 
+                    <label for="Number">  Number:
+                    <input type="Number" id="number" name="number" required placeholder="Mobile Number">
+                </label> 
+                
+                </label> 
+
+                <label>Message: </label>
+                <textarea class="Box" name="add" class="textarea" required placeholder="Please Enter The Feedback"></textarea>
+        
+                <button type="submit">Submit </button> 
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <H6>Copyright © 2023 | HEALTHCARE APPOINTMENT SYSTEM | All rights reserved. </H6> 
+        </div>
+    </footer>
+
+
+</body>
+</html>
